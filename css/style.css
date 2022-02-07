@@ -1,0 +1,301 @@
+@font-face{
+	font-family: Museo;
+	src: url(../fonts/ofont.ru_Museo Sans Cyrl 700.ttf);
+}
+
+   					/*///RESET CSS///*/
+:root{
+	font-size: 10px;
+	line-height: 1; 
+}
+html,body{
+	color: #fff;
+	width: 100%;
+	height: 100%; 
+	background-color: #fff; 
+	font-family:Ubuntu,sans-serif;
+}
+footer,aside,header,
+nav,article,menu,
+figure,section,picture,
+video,audio{
+	display: block;
+}
+*{
+	box-sizing: border-box;
+	clear: both;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: 0;
+}
+
+a{
+	display: block;
+	cursor: pointer;
+	color: inherit;
+	font-family: inherit;
+	width: 100%;
+	height: 100%;
+}
+img{
+	width: 100%;
+}
+.button,.btn{
+	cursor: pointer;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.clearfix:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+.wrapper{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	background: url(../img/background.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 0;
+}
+.container{
+	margin: 0 auto; 
+	width:100%;
+	height: 100%;
+	max-width: 118rem;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+						/*\\\RESET CSS\\\*/
+
+						/*///GENERAL BEGINING BODY STYLE ///*/
+
+
+						/*\\\GENERAL BEGINING BODY STYLE \\\*/
+
+   					/*///HEADER///*/
+
+			/*///header_navigation///*/
+
+.header__navigation{
+	width: 100%;
+	min-height: 100px;
+	border-top: 1px solid rgb(152,147,147,.2);
+	border-bottom: 1px solid rgb(152,147,147,.2);
+	color: #fff;
+	font-size: 16px;
+}
+.container__header-nav{
+	display: flex;
+	justify-content: space-between;
+}
+.header__nav{
+	display: flex;
+	align-items: center;
+	min-height: 100px;
+}
+.header__nav li{
+	padding-bottom: 8px;
+	margin-left: 40px;
+	border-bottom: 1px solid rgb(152,147,147,0);
+	transition: 0.2s;	
+}
+.header__nav li:hover{
+	cursor: pointer;
+	color: rgb(152,147,147,.6);
+	border-bottom: 1px solid rgb(152,147,147,0.6);
+}
+			/*\\\header_navigation\\\*/
+      
+      /*///header__logo///*/
+
+.header__logo{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 315px;
+	border-left: 1px solid rgb(152,147,147,.2);
+	border-right: 1px solid rgb(152,147,147,.2);
+}      
+      /*\\\header__logo\\\*/
+.box-conner{
+	position: absolute;
+	width: 7px;
+	height: 7px;
+}
+.box__top-left{
+	top: 0;
+	left: 0;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+.box__top-right{
+	top: 0;
+	right: 0;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+.box__bottom-left{
+	bottom: 0;
+	left: 0;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+.box__bottom-right{
+	bottom: 0;
+	right: 0;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+.header__logo a{
+	background: url(../img/logo.png) no-repeat;
+	height: 34px;
+	width: 274px;
+}
+.header__logo:hover{
+	cursor: pointer;
+}
+.header__logo:hover .box__top-left{
+	transition: 2s;
+	top: 20px;
+	left: 20px;
+}
+.header__logo:hover .box__top-right{
+	transition: 2s;
+	top: 20px;
+  right: 20px;
+}
+.header__logo:hover .box__bottom-left{
+	transition: 2s;
+	bottom: 20px;
+	left: 20px;
+}
+.header__logo:hover .box__bottom-right{
+	transition: 2s;
+	bottom: 20px;
+	right: 20px;
+}
+			/*///header__banner///*/
+.header__banner{
+	font-family: Museo,sans-serif;
+	color: #fff;
+	height: calc(100vh - 110px);
+	display: flex;
+	padding-top: 120px;
+}
+.title_gradient-text h1{
+	font-size: 58px;
+}
+.title_gradient-text p{
+	font-size: 20px;
+}
+.left__content-box{
+	width: 55%;
+}	
+.right__content-box{
+	width: 44%;
+}
+  /*/// title_gradient-text ///*/
+
+.title_gradient-text{
+	width: 460px;
+	background: linear-gradient(90deg, #fff 10%, #ff450c 80%);
+	background-clip: text;
+}
+.title_gradient-text h1,.title_gradient-text p{
+	color: transparent;
+}  
+  /*\\\ title_gradient-text \\\*/
+
+  /*/// btn_space-travel ///*/
+.left__content-box .btn_space-travel{
+	position: relative;
+	font-size: 14px;
+	width: 180px;
+	height: 35px;
+	margin-top: 90px;
+	padding: 10px 0px;
+	padding-left: 20px;
+	 background-image: radial-gradient(circle at 100% 100%, transparent -1px, #0a1f2d -1px, #0a1f2d 1px, transparent 1px), linear-gradient(to right, #0a1f2d, #24589c), radial-gradient(circle at 0% 100%, transparent -1px, #24589c -1px, #24589c 1px, transparent 1px), linear-gradient(to bottom, #24589c, #0a1f2d), radial-gradient(circle at 0% 0%, transparent -1px, #0a1f2d -1px, #0a1f2d 1px, transparent 1px), linear-gradient(to left, #0a1f2d, #24589c), radial-gradient(circle at 100% 0%, transparent -1px, #24589c -1px, #24589c 1px, transparent 1px), linear-gradient(to top, #24589c, #0a1f2d);
+	background-size: 1px 1px, calc(100% - 2px) 2px, 1px 1px, 2px calc(100% - 2px);
+	background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left; 
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.top-right,
+.bottom-left{
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: transparent;
+}
+.top-right{
+	top: 0;
+	right: 0;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	box-shadow: 1px -1px 6px 1px rgb(255,255,255,.7);
+	/*box-shadow: 1px 1px 5px 1px rgb(255,255,255,.7) inset;*/
+}
+.bottom-left{
+	bottom: 0;
+	left: 0;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	box-shadow: -1px 1px 6px 1px rgb(255,255,255,.7);
+	/*box-shadow: 1px 1px 5px 1px rgb(255,255,255,.7) inset;*/
+}
+
+  /*\\\ btn_space-travel \\\*/
+
+
+.block__bg-mars{
+	position: absolute;
+	z-index: 1000;
+	top: 142px;
+	left: 758px;
+	width: 540px;
+	height: 540px;
+	background-position: center;
+	background-size: cover;
+	background: url(../img/bg_mars.png) no-repeat;
+}	
+			/*\\\header__banner\\\*/
+   					/*\\\HEADER\\\*/
+
+   					/* ///MEDIA QUERY/// */
+
+@media(max-width: 401px){
+	
+	
+}
+
+/* ///////// */
+@media(max-width: 782px){
+	
+}
+
+/* ///////// */
+@media(min-width: 783px) and (max-width: 900px){
+	
+}
+
+ /*/////////*/ 
+@media(min-width: 901px) and (max-width: 1199px){
+	
+}
+
+ /* ///////// */ 
+@media(min-width: 1200px){
+
+}  					
+ 					
