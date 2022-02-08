@@ -618,3 +618,8 @@ img{
     font-size: 14px;
 	}
 }	
+@media(max-width: 240px){
+	.container_content-service{
+		justify-content: center;
+	}
+}
