@@ -455,6 +455,70 @@ img{
 			/*\\\ right__content-box \\\*/
 			    /*\\\header__banner\\\*/
    					/*\\\HEADER\\\*/
+            
+            /*/// container_adaptive-menu ///*/
+.container_adaptive-menu{
+	position: fixed;
+	z-index: 1000;
+	width: 150px;
+	height: 100%;
+	background: linear-gradient(to bottom,rgba(255,255,255,0.02) 5%, rgba(255,69,12,0.2) 70%);
+	display: none;
+	font-size: 14px;
+	padding-top: 10px;
+	transform: translateX(-150px);
+	transition: 0.7s;
+}
+.container_adaptive-menu.is-active{
+	transform: translate(0px);
+}
+.adaptive__header_nav li{
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.burger_btn{
+	position: absolute;
+	top: 20px;
+	right: -40px;
+	width: 30px;
+	height: 30px;
+	background: url(../img/mars_planet.png) no-repeat;
+	transform: rotate(45deg);
+	background-size: contain;
+	border-radius: 50%;
+	box-shadow: 0px 0px 8px 5px rgba(255,69,12,0.4);
+	animation: shining_mars 6s infinite alternate;
+}
+@keyframes shining_mars{
+	0%{
+		box-shadow: 0px 0px 8px 5px rgba(255,69,12,0.4)
+	}
+	15%{
+		box-shadow: 0px 0px 8px 5px rgba(255,69,12,0.1)
+	}
+	25%{
+		box-shadow: 0px 0px 8px 5px rgba(255,69,12,0.2)
+	}
+	50%{
+		box-shadow: 0px 0px 10px 2px rgba(255,69,12,0.7)
+	}
+	75%{
+		box-shadow: 0px 0px 8px 5px rgba(255,69,12,0.2)
+	}
+	100%{
+		box-shadow: 0px 0px 8px 3px rgba(255,69,12,0.4)
+	}
+}
+.line_border{
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	background: linear-gradient(to top,rgba(255,255,255,0.04) 5%, rgba(255,255,255,0.2) 70%);
+	top: 0;
+	right: 0;
+}
+            
+            /*\\\ container_adaptive-menu /\\\*/
 
    					/* ///MEDIA QUERY/// */
 
@@ -464,6 +528,9 @@ img{
 	}
 	.title_gradient-text p{
     font-size: 14px;
+	}
+	.container_adaptive-menu{
+		background: linear-gradient(to top,rgba(255,255,255,0.02) 5%, rgba(255,69,12,0.8) 70%);
 	}
 }	
 
@@ -512,6 +579,11 @@ img{
 	}
 	.btn_space-travel{
 		margin: 0 auto;
+	}
+	/*///////////*/
+	.container_adaptive-menu{
+		display: block;
+		/*transform: translateX(0px);*/
 	}
 }
 
