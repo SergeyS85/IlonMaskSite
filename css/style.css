@@ -61,7 +61,7 @@ img{
 	clear: both;
 }
 .wrapper{
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 	overflow-x: hidden;
 	background: url(../img/background_norocke.jpg) no-repeat;
@@ -309,19 +309,7 @@ img{
 	box-shadow: -1px 1px 6px 1px rgb(255,255,255,.7);
 }
 /*\\\ btn_space-travel \\\*/
-
-.block__bg-mars{
-	position: absolute;
-	z-index: 1000;
-	top: 142px;
-	left: 758px;
-	width: 440px;
-	height: 440px;
-	background: url(../img/mars_planet.png) no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	
-}      
+      
       /*\\\ left__content-box \\\*/
 	
 			
@@ -572,6 +560,11 @@ img{
 
 /*///////////*/
 @media(max-width: 689px){
+	.wrapper{
+		background: url(../img/mobile_bg.webp) no-repeat;
+		background-size: cover;
+		background-position: 50% 0
+	}
 	.header__banner{
 		padding-top: 30px;
 	}
